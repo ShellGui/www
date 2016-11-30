@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>ShellGui &mdash; shellgui offical master documentation</title>
+    <title>从这里开始 &mdash; shellgui offical master documentation</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="shellgui offical master documentation" href="#" />
+    <link rel="top" title="shellgui offical master documentation" href="index.html" />
 
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -51,7 +51,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><span><img src="_static/shellgui.svg"></span>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/shellgui.svg"></span>
           首页</a>
         <span class="navbar-text navbar-version pull-left"><b>master</b></span>
       </div>
@@ -59,7 +59,7 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="downloads.html">下载</a></li>
+                <li><a href="#">下载</a></li>
                 <li><a href="http://wiki.shellgui.com/">手册</a></li>
             
             
@@ -68,7 +68,7 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">ShellGui首页 <b class="caret"></b></a>
+     href="index.html">ShellGui首页 <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="simple">
@@ -85,8 +85,12 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">ShellGui</a></li>
-<li><a class="reference internal" href="#id1">目录</a></li>
+<li><a class="reference internal" href="#">从这里开始</a><ul>
+<li><a class="reference internal" href="#id2">下载固件</a></li>
+<li><a class="reference internal" href="#id3">刷机/升级</a></li>
+<li><a class="reference internal" href="#id4">恢复出厂设置</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -102,7 +106,7 @@
             
               <li class="hidden-sm">
 <div id="sourcelink">
-  <a href="_sources/index.txt"
+  <a href="_sources/downloads.txt"
      rel="nofollow">Source</a>
 </div></li>
             
@@ -126,21 +130,31 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="shellgui">
-<h1>ShellGui<a class="headerlink" href="#shellgui" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="_images/shellgui.svg"><div align="center" class="align-center"><img alt="alternate text" src="_images/shellgui.svg" /></div>
-</a>
-<p>基于 OpenWrt 的网络操作系统。</p>
-<div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
+  <div class="section" id="id1">
+<h1>从这里开始<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>下载固件<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>ShellGui固件可以从这里去下载
+<a class="reference external" href="http://www.shellgui.com/releases/">http://www.shellgui.com/releases/</a></p>
+</div>
+<div class="section" id="id3">
+<h2>刷机/升级<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>可以在原有的 OpenWrt 固件下直接升级.
+刷机可以保留部分配置文件,请自行选择.</p>
+<p>命令行升级</p>
+<div class="code bash highlight-c"><div class="highlight"><pre><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span>
+<span class="n">sysupgrade</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">F</span> <span class="n">firmware</span><span class="p">.</span><span class="n">bin</span>
+</pre></div>
 </div>
 </div>
-<div class="section" id="id1">
-<h1>目录<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
-</ul>
+<div class="section" id="id4">
+<h2>恢复出厂设置<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>刷机可以保留部分配置文件,请自行选择.</p>
+<div class="code bash highlight-c"><div class="highlight"><pre><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span>
+<span class="n">firstboot</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 

@@ -3,20 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to shellgui-main's documentation!
+ShellGui
 =========================================
 
-Contents:
+.. image:: _static/shellgui.svg
+    :scale: 100
+    :align: center
+    :alt: alternate text
+
+
+基于 OpenWrt 的网络操作系统。
 
 .. toctree::
    :maxdepth: 2
 
 
 
-Indices and tables
+目录
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
